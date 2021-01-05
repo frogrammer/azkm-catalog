@@ -1,7 +1,7 @@
 ﻿{
-  "dataSourceName": "{{pipeline_name}}",
-  "targetIndexName": "{{pipeline_name}}",
-  "skillsetName": "{{pipeline_name}}",
+  "dataSourceName": "imagenet",
+  "targetIndexName": "imagenet",
+  "skillsetName": "imagenet",
   "fieldMappings": [
     {
       "sourceFieldName": "metadata_storage_path",

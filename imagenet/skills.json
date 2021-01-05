@@ -3,7 +3,7 @@
   "cognitiveServices": {
     "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
     "description": "mycogsvcs",
-    "key": "{{primary_access_key}}"
+    "key": "{{azurerm_cognitive_account/primary_access_key}}"
   },
   "skills": [
     {
