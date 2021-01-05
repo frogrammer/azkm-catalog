@@ -3,6 +3,7 @@
         "datasource": "./imagenet/datasource.json",
         "index": "./imagenet/index.json",
         "indexer": "./imagenet/indexer.json",
-        "skillset": "./imagenet/skills.json"
+        "skillset": "./imagenet/skills.json",
+        "ida_appsettings": "./imagenet/appsettings.json"
     }
 }
