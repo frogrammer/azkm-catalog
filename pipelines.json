@@ -3,6 +3,6 @@
         "datasource": "./imagenet/datasource.json",
         "index": "./imagenet/index.json",
         "indexer": "./imagenet/indexer.json",
-        "skills": "./imagenet/skills.json"
+        "skillset": "./imagenet/skills.json"
     }
 }
