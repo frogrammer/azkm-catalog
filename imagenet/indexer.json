@@ -1,7 +1,7 @@
 ﻿{
-  "dataSourceName": "{{datasource_name}}",
-  "targetIndexName": "{{index_name}}",
-  "skillsetName": "{{skillset_name}}",
+  "dataSourceName": "{{pipeline_name}}",
+  "targetIndexName": "{{pipeline_name}}",
+  "skillsetName": "{{pipeline_name}}",
   "fieldMappings": [
     {
       "sourceFieldName": "metadata_storage_path",
