@@ -4,6 +4,7 @@
         "index": "./imagenet/index.json",
         "indexer": "./imagenet/indexer.json",
         "skillset": "./imagenet/skills.json",
-        "ida_appsettings": "./imagenet/appsettings.json"
+        "app_bin": "./imagenet/app.zip",
+        "app_template": "./imagenet/app.yaml"
     }
 }
