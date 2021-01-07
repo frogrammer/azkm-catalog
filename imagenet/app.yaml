@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
         - containerPort: 443
         command: ["dotnet"]
-        args: ["CognitiveSearch.UI.dll"]
+        args: ["/mnt/kmapp/imagenet/app/publish/CognitiveSearch.UI.dll"]
         volumeMounts:
           - name: imagenet
             mountPath: /mnt/kmapp/imagenet
