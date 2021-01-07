@@ -2,7 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: imagenet
-  spec:
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: imagenet
+  template:
+    metadata:
+      labels:
+        app: imagenet
+    spec:
       containers:
       - name: imagenet
         image: mcr.microsoft.com/dotnet/core/aspnet:3.1
