@@ -6,5 +6,8 @@
         "skillset": "./imagenet/skills.json",
         "app_bin": "./imagenet/app.zip",
         "app_template": "./imagenet/app.yaml"
+    },
+    "pyspark": {
+        "app_template": "./imagenet/app.yaml"
     }
 }
