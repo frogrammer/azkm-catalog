@@ -2,16 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: imagenet
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: imagenet
-  template:
-    metadata:
-      labels:
-        app: imagenet
-    spec:
+  spec:
       containers:
       - name: imagenet
         image: mcr.microsoft.com/dotnet/core/aspnet:3.1
@@ -19,13 +10,13 @@ spec:
         - containerPort: 80
         - containerPort: 443
         command: ["dotnet"]
-        args: ["/mnt/kmapp/imagenet/app/publish/CognitiveSearch.UI.dll"]
+        args: ["CognitiveSearch.UI.dll"]
         volumeMounts:
-          - name: imagenet
-            mountPath: /mnt/kmapp/imagenet
-        workingDir: /mnt/kmapp/imagenet
+          - name: kmapp
+            mountPath: /mnt/kmapp/
+        workingDir: /mnt/kmapp/imagenet/app/publish/
       volumes:
-      - name: imagenet
+      - name: kmapp
         azureFile:
           secretName: azure-secret
           shareName: kmapp
