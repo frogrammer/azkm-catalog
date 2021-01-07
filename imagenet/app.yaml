@@ -53,7 +53,7 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
-  - host: {{azurerm_kubernetes_cluster/addon_profile/http_application_routing/http_application_routing_zone_name}}
+  - host: imagenet.{{azurerm_kubernetes_cluster/addon_profile/http_application_routing/http_application_routing_zone_name}}
     http:
       paths:
       - backend:
