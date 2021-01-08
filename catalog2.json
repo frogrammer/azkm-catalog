@@ -1,0 +1,19 @@
+{
+    "imagenet": {
+        "application": {
+            "template": "./imagenet/app.yaml",
+            "bin": "./imagenet/app.zip"
+        },
+        "pipeline": {
+            "datasource": "./imagenet/datasource.json",
+            "index": "./imagenet/index.json",
+            "indexer": "./imagenet/indexer.json",
+            "skillset": "./imagenet/skills.json"
+        }
+    },
+    "pyspark": {
+        "application": {
+            "template": "./imagenet/app.yaml"
+        }
+    }
+}
